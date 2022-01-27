@@ -15,12 +15,12 @@ import (
 
 	"errors"
 
-	"github.com/dave/jennifer/jen"
-	"github.com/emicklei/proto"
-	"github.com/emicklei/proto-contrib/pkg/protofmt"
 	"github.com/CreFire/kit/fs"
 	"github.com/CreFire/kit/parser"
 	"github.com/CreFire/kit/utils"
+	"github.com/dave/jennifer/jen"
+	"github.com/emicklei/proto"
+	"github.com/emicklei/proto-contrib/pkg/protofmt"
 	"github.com/sirupsen/logrus"
 	"github.com/spf13/viper"
 )

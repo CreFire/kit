@@ -5,10 +5,10 @@ import (
 	"path"
 	"strings"
 
-	"github.com/dave/jennifer/jen"
 	"github.com/CreFire/kit/fs"
 	"github.com/CreFire/kit/parser"
 	"github.com/CreFire/kit/utils"
+	"github.com/dave/jennifer/jen"
 	"github.com/sirupsen/logrus"
 	"github.com/spf13/viper"
 )
@@ -1684,7 +1684,7 @@ func (g *generateCmd) generateRun() (*PartialGenerator, error) {
 			jen.Id("*zipkinURL"),
 		),
 		jen.List(jen.Id("collector"), jen.Err()).Op(":=").Qual(
-			"github.com/openzipkin/zipkin-go-opentracing", "NewHTTPCollector",
+			"github.com/openzipkin-contrib/zipkin-go-opentracing", "NewHTTPCollector",
 		).Call(jen.Id("*zipkinURL")),
 		jen.If(jen.Err().Op("!=").Nil()).Block(
 			jen.Id("logger").Dot("Log").Call(
@@ -1695,7 +1695,7 @@ func (g *generateCmd) generateRun() (*PartialGenerator, error) {
 		),
 		jen.Defer().Id("collector").Dot("Close").Call(),
 		jen.Id("recorder").Op(":=").Qual(
-			"github.com/openzipkin/zipkin-go-opentracing", "NewRecorder",
+			"github.com/openzipkin-contrib/zipkin-go-opentracing", "NewRecorder",
 		).Call(
 			jen.Id("collector"),
 			jen.Lit(false),
