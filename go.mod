@@ -1,6 +1,6 @@
-module github.com/kujtimiihoxha/kit
+module github.com/CreFire/kit
 
-go 1.12
+go 1.17
 
 require (
 	github.com/Songmu/prompter v0.0.0-20181014095714-d227c68538bd

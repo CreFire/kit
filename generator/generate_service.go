@@ -6,9 +6,9 @@ import (
 	"strings"
 
 	"github.com/dave/jennifer/jen"
-	"github.com/kujtimiihoxha/kit/fs"
-	"github.com/kujtimiihoxha/kit/parser"
-	"github.com/kujtimiihoxha/kit/utils"
+	"github.com/CreFire/kit/fs"
+	"github.com/CreFire/kit/parser"
+	"github.com/CreFire/kit/utils"
 	"github.com/sirupsen/logrus"
 	"github.com/spf13/viper"
 )

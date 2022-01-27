@@ -5,8 +5,8 @@ import (
 
 	"runtime"
 
-	"github.com/kujtimiihoxha/kit/parser"
-	"github.com/kujtimiihoxha/kit/utils"
+	"github.com/CreFire/kit/parser"
+	"github.com/CreFire/kit/utils"
 	"github.com/spf13/viper"
 )
 
